@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('queues', function (Blueprint $table) {
             $table->id();
-            $table->bigIncrements('id');
             $table->integer('patient_id')->unsigned();
             $table->string('department');
             $table->timestamps();
